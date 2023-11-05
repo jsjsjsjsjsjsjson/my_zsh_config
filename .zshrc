@@ -125,3 +125,7 @@ ex ()
 source /home/chara/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/chara/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
+
+figlet -f "$(find /usr/share/figlet/ -type f ! -name "*.flc" | shuf -n 1)" "Chara's" | lolcat
+figlet -f "$(find /usr/share/figlet/ -type f ! -name "*.flc" | shuf -n 1)" " Android Comper!" | lolcat
+fortune | cowsay -f "$(ls /usr/share/cowsay/cows/ | shuf -n 1)"
